@@ -3,6 +3,7 @@
 // config for Moontechs/FilamentWebauthn
 return [
     'login_page_url' => '/webauthn-login',
+    'webauthn_layout' => 'filament::components.layouts.card',
     'user' => [
         'auth_identifier' => 'email', // column in users table with unique user id
     ],

@@ -117,7 +117,7 @@ class WebauthnLogin extends Component implements HasForms
     public function render(): View
     {
         return view('filament-webauthn::livewire.webauthn-login')
-            ->layout('filament::components.layouts.card', [
+            ->layout(config('filament-webauthn.webauthn_layout') ?: 'filament::components.layouts.card', [
                 'title' => __('filament::login.title'),
             ]);
     }
