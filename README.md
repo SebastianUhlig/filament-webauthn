@@ -1,9 +1,9 @@
 # Filament Webauthn Authentication (FIDO)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/moontechs/filament-webauthn.svg?style=flat-square)](https://packagist.org/packages/moontechs/filament-webauthn)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/moontechs/filament-webauthn/.github/workflows/run-tests.yml?branch=main)](https://github.com/moontechs/filament-webauthn/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/moontechs/filament-webauthn/.github/workflows/fix-php-code-style-issues.yml?branch=main)](https://github.com/moontechs/filament-webauthn/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/moontechs/filament-webauthn.svg?style=flat-square)](https://packagist.org/packages/moontechs/filament-webauthn)
+![Supported PHP Version 8.1](https://img.shields.io/badge/8.1-blue?style=flat-square&label=Supported%20PHP%20Version)
+![Supported FilamentPHP Version 2.0](https://img.shields.io/badge/2.0-red?style=flat-square&label=Supported%20FilamentPHP%20%20Version)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/sebastiancx/filament-webauthn.svg?style=flat-square)](https://packagist.org/packages/sebastiancx/filament-webauthn)
+[![Total Downloads](https://img.shields.io/packagist/dt/sebastiancx/filament-webauthn.svg?style=flat-square)](https://packagist.org/packages/sebastiancx/filament-webauthn)
 
 Passwordless login for your Filament app. Web Authentication server-side and front-end components.
 
