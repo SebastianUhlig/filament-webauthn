@@ -68,6 +68,7 @@ class Registrator implements RegistratorInterface
                 'user_id' => $this->user->getAuthIdentifier(),
                 'public_key' => base64_encode(serialize($registrationResult->getPublicKey())),
                 'user_handle' => $registrationResult->getUserHandle()->toString(),
+                'meta_data' => $registrationResult->getMetadata(),
             ]);
             Session::forget($this->getSessionKey());
         } catch (WebAuthnException $exception) {
