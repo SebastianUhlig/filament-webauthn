@@ -1,19 +1,25 @@
 {
-    "name": "moontechs/filament-webauthn",
+    "name": "sebastiancx/filament-webauthn",
     "description": "Filament webauthn sign in and registration",
     "keywords": [
+        "sebastiancx",
         "moontechs",
         "laravel",
         "filament-webauthn",
         "webauthn",
         "fido"
     ],
-    "homepage": "https://github.com/moontechs/filament-webauthn",
+    "homepage": "https://github.com/sebastiancx/filament-webauthn",
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Kozii",
             "email": "michael.kozii.mzlqe@aleeas.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Sebastian Uhlig",
+            "email": "sebastian@uhlig.app",
             "role": "Developer"
         }
     ],
