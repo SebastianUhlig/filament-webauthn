@@ -19,7 +19,7 @@ Should work with HTTPS and not localhost only.
 You can install the package via composer:
 
 ```bash
-composer require moontechs/filament-webauthn
+composer require sebastiancx/filament-webauthn
 ```
 
 You should publish and run the migrations with:
