@@ -20,7 +20,6 @@ class WebauthnKey extends Model
         'public_key',
         'user_handle',
         'user_id',
-        'identifier',
-        'meta_data',
+        'client_options',
     ];
 }
