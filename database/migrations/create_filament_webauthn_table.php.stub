@@ -14,7 +14,6 @@ return new class extends Migration
             $table->mediumText('public_key');
             $table->mediumText('user_handle');
             $table->mediumText('identifier')->nullable();
-            $table->text('authenticator_data');
             $table->mediumText('meta_data')->nullable();
             $table->foreignId('user_id');
             $table->timestamps();

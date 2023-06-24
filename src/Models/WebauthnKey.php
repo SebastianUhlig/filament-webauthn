@@ -21,7 +21,6 @@ class WebauthnKey extends Model
         'user_handle',
         'user_id',
         'identifier',
-        'authenticator_data',
         'meta_data',
     ];
 }

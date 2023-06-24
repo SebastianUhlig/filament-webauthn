@@ -63,13 +63,12 @@ class Registrator implements RegistratorInterface
             if (! $registrationResult->isUserVerified()) {
                 throw new RegistrationException();
             }
-            WebauthnKey::create([
+            WebauthnKey::query()->create([
                 'credential_id' => $registrationResult->getCredentialId()->toString(),
                 'user_id' => $this->user->getAuthIdentifier(),
                 'public_key' => base64_encode(serialize($registrationResult->getPublicKey())),
                 'user_handle' => $registrationResult->getUserHandle()->toString(),
                 'identifier' => $registrationResult->getIdentifier()->toString(),
-                'authenticator_data' => $registrationResult->getAuthenticatorData()->getRaw(),
                 'meta_data' => $registrationResult->getMetadata()->getDescription(),
             ]);
             Session::forget($this->getSessionKey());
