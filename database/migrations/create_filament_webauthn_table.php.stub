@@ -13,7 +13,9 @@ return new class extends Migration
             $table->string('credential_id');
             $table->mediumText('public_key');
             $table->mediumText('user_handle');
-            $table->text('meta_data')->nullable();
+            $table->mediumText('identifier')->nullable();
+            $table->text('authenticator_data');
+            $table->mediumText('meta_data')->nullable();
             $table->foreignId('user_id');
             $table->timestamps();
 
