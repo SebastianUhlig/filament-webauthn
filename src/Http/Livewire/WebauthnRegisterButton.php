@@ -32,6 +32,7 @@ class WebauthnRegisterButton extends Component
 
     public function register(): void
     {
+        $this->emit('registerWebauthn');
         $this->emitSelf('register', (new WebauthnFactory())->createRegistrator()->getClientOptions());
     }
 
