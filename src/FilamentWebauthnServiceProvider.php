@@ -2,15 +2,20 @@
 
 namespace Moontechs\FilamentWebauthn;
 
-use Filament\PluginServiceProvider;
 use Livewire\Livewire;
 use Moontechs\FilamentWebauthn\Http\Livewire\WebauthnLogin;
 use Moontechs\FilamentWebauthn\Http\Livewire\WebauthnRedirectToLoginButton;
 use Moontechs\FilamentWebauthn\Http\Livewire\WebauthnRegisterButton;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentWebauthnServiceProvider extends PluginServiceProvider
+class FilamentWebauthnServiceProvider extends PackageServiceProvider
 {
+    public function getId(): string
+    {
+        return 'filament-webauthn';
+    }
+
     protected array $scripts = [
         'filament-webauthn-scripts' => __DIR__.'/../resources/assets/dist/filament-webauthn.js',
     ];
