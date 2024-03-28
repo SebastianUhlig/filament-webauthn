@@ -22,7 +22,7 @@ return [
         'relying_party' => [
             'name' => env('APP_NAME'),
             'origin' => env('APP_URL'),
-            'id' => env('APP_HOST', parse_url(env('APP_URL'))['host']),
+            'id' => env('APP_HOST', 'localhost'),
         ],
         'client_options' => [
             'timeout' => 60000,
